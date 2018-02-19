@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_gravity="center" android:orientation="vertical"  >
+
+    <TextView
+        android:id="@+id/lbl_begindate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colortextt"
+        android:text="@string/beginDate" />
+
+    <EditText
+        android:id="@+id/txt_date_begin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="datetime"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/lbl_Srt_order" android:text="Sort order"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colortextt"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/txt_spinow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/list_spinow"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/edit_text"/>/>
+    <TextView
+        android:id="@+id/lbl_desc" android:text="New desc values"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colortextt"
+        android:layout_height="wrap_content" />
+
+    <CheckBox android:id="@+id/checkbox_arts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arts" />
+    <CheckBox android:id="@+id/checkbox_FS_ST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fashion and Still" />
+    <CheckBox android:id="@+id/checkbox_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport" />
+    <Button
+        android:paddingTop="20dp"
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onArticleSearch"
+        android:text="@string/save" />
+
+
+</LinearLayout>
